@@ -1,5 +1,5 @@
 const amqp = require('amqplib');
-
+ 
 const sendMessage = async () => {
   try {
     const connection = await amqp.connect('amqp://localhost');
