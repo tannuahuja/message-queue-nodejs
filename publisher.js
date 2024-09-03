@@ -6,7 +6,7 @@ const sendMessage = async () => {
     const channel = await connection.createChannel();
 
     const queue = 'message_queue';
-    const message = 'Hello, RabbitMQ!';
+    const message = 'Hello, RabbitMQ!'; 
 
     await channel.assertQueue(queue, { durable: false });
     channel.sendToQueue(queue, Buffer.from(message));
