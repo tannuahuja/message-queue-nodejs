@@ -12,7 +12,7 @@ const sendMessage = async () => {
     channel.sendToQueue(queue, Buffer.from(message));
 
     console.log(`Message sent: ${message}`);
-
+ 
     setTimeout(() => {
       connection.close();
       process.exit(0);
